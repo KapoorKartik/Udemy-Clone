@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+ <html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=divice-width,initial-scal=1.0'>
+<title>Document</title>
+<style>
+ .udmey{
+     width: 100%;
+    
+ }
+ #nav_bar{
+     display: grid;
+     grid-template-columns: 10% 10% 38% 10% 10% 2% 6% 6%;
+     gap: 1%;
+     height: 30px;
+     
+ }
+ #search_bar{
+     border-radius: 45%;
+     border :solid black 2px;
+     height: 30px;
+ }
+ #log_in{
+     border: solid 2px;
+     text-align: center;
+     height: 45px;
+     font-size: 16px;
+ }
+ #sign_up{
+     border: solid black 2px;
+     background-color: black;
+     color: white;
+     text-align: center;
+     height: 45px;
+     font-size: 16px;
+ }
+.color{
+    color: white;
+}
+#sign_up_page{
+    display: grid;
+    align-items: center;
+    gap: 2%;
+    margin-left: 35%;
+    margin-right: 35%;
+    
+}
+#top{
+    display: grid;
+    grid-template-rows: 10% 70%;
+    gap: 15%;
+}
+.already{
+    /* align-items: center; */
+    display: flex;
+    gap: 2%;
+    text-align: center;
+ 
+}
+.name{
+    padding: 3%;
+    font-size: 20px;
+}
+.sign{
+    padding: 3%;
+    background-color: purple;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+.color_1{
+    color: black;
+}
+</style>
+</head>
+<body>
+    <div id="top">
+    <div id="nav_bar">
+        <img class="udmey" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg">
+        <h3>Categories</h3>
+        <input id="search_bar" type="text" placeholder="Search for anything">
+        <h3>Udemy business</h3>
+        <h3>Teach on Udemey</h3>
+        <h3>🛒</h3>
+        <button id="log_in" ><a class="color_1" href="Lon_in_Page.html">Log In</a></button>
+        <button id="sign_up"><a class="color" href="signupPage.html">Sign Up </a></button>
+    </div>
+    <div id="sign_up_page">
+        <h2>Log In to Your Udemy Account!</h2>
+        <div class = "paragraph"></div>
+        
+        <input id = "email" class="name" type="email" placeholder="Email">
+        <input id = "pass" class="name" type="password" placeholder="Password">
+   
+        <button onclick = "checkuser(event)" class="sign">Log In</button>
+        <div class="already">
+            <h3>or  </h3>
+            <div>  </div>
+            <h3>   Forgot Password</h3> 
+           </div> 
+        <div></div>
+        <div class="already">
+        <h3>Don't have an account?</h3>
+        <h3><a class="color_1" href="signupPage.html">Sign Up </a></h3> 
+       </div>  
+       <h3>Log in with your organization</h3> 
+    </div>
+    </div>
+</body>
+</html>
+ <script>
+
+     var user_data = JSON.parse(localStorage.getItem("user_details"))
+
+     function checkuser(e){
+         e.preventDefault()
+
+         var user_email = document.getElementById("email").value
+
+         var user_password = document.getElementById("pass").value
+
+         user_data.forEach(function(product){
+
+                var user_e = product.email
+                var user_p = product.password
+
+
+            if(user_e == user_email && user_p == user_password){
+                window.location.href = "page1.html"
+            }
+
+
+            else{
+
+               
+                alert("There was a problem logging in. Check your email and password or create an account.")
+
+
+                // var div = document.getElementsByClassName("paragraph")
+                // var para1 = document.createElement("p")
+                // para1.textContent = "There was a problem logging in. Check your"
+                // var para2 = document.createElement("p")
+                // para2.textContent =  "email and password or create an account."
+
+
+                // var parent = document.getElementById("sign_up_page")
+                // div.append(para1,para2)
+                // parent.append(div)
+
+
+            }
+
+         })
+
+
+
+
+
+
+
+
+
+     }
+
+
+
+
+
+
+ </script>
+ 
