@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type = "text/css">
+    * {
+        margin:5px;
+    }
+ .udmey{
+     width: 100%;
+    
+ }
+ #nav_bar{
+     display: grid;
+     grid-template-columns: 10% 10% 38% 10% 10% 2% 6% 6%;
+     gap: 1%;
+     height: 30px;
+     
+ }
+ #search_bar{
+     border-radius: 45%;
+     border :solid black 2px;
+     height: 30px;
+ }
+ #log_in{
+     border: solid 2px;
+     text-align: center;
+     height: 45px;
+     font-size: 16px;
+ }
+ #sign_up{
+     border: solid black 2px;
+     background-color: black;
+     color: white;
+     text-align: center;
+     height: 45px;
+     font-size: 16px;
+ }
+.color{
+    color: white;
+}
+
+.color_1{
+    color: black;
+} 
+
+#home-top {
+    
+  
+    border: 1px solid black;
+    margin:40px 0px;
+    display:grid;
+    height:380px;
+    background-image: url(https://img-c.udemycdn.com/notices/web_banner/image_udlite/83e8f763-8c2e-45a4-a4f7-f91fd48e500d.jpg);
+    background-size: contain;
+    grid-template-columns: 25%;
+   
+
+}
+
+.leftbox {
+  
+   margin-left:20%;
+   background-color: white;
+   width:400px;
+   margin-top:50px;
+   margin-bottom: 50px;
+   padding:15px;
+   
+}
+.b-font {
+    font-size: 26px;
+
+}
+#b-font {
+    font-size: 44px;
+}
+.leftbox > p {
+    font-size: 20px;
+}
+.leftbox > input {
+    font-size: 30px;
+   
+}
+.leftbox > input::placeholder {
+    font-size: 16px;
+    padding:10px;
+}
+.course-section > p {
+    font-size: 22px;
+}
+
+
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div id="nav_bar">
+        <img class="udmey" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg">
+        <h3>Categories</h3>
+        <input id="search_bar" type="text" placeholder="Search for anything">
+        <h3>Udemy business</h3>
+        <h3>Teach on Udemey</h3>
+        <h3>🛒</h3>
+        <button id="log_in" ><a class="color_1" href="Lon_in_Page.html">Log In</a></button>
+        <button id="sign_up"><a class="color" href="signupPage.html">Sign Up </a></button>
+    </div>
+    
+
+        <div id = "home-top">
+            <img src="" alt="">
+           
+            <div class="leftbox">
+                    <h1 id = "b-font">Courses as low as ₹525</h1>
+                   <p>For an extra 10% off sale prices, use PLUS10 in cart. Ends Aug. 26.</p> 
+                   <input id = "seach-box type="text" placeholder="What do you want to learn ?">
+                </div>
+        </div>
+
+        <div class="course-section">
+            <h1 id = "b-font">A broad selection of courses</h1>
+            <p>Choose from 155,000 online video courses with new additions published every month</p>
+        </div>
+
+
+
+</body>
+</html>
