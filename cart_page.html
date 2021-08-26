@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type = "text/css">
+    .shoppingcart {
+        height:150px;
+        background-color: black;
+        margin-top:0px;
+       
+    }
+    h1 {
+        color:white;
+        font-size:48px;
+        padding:50px 80px;
+        
+    }
+    .cart_item {
+        width:400px;
+        margin:auto;
+        font-size:18px;
+        text-align: center;
+        margin-top:50px;
+    }
+    .buttons {
+        background-color: blueviolet;
+        color:white;
+       padding:5px;
+        font-size:20px;
+    }
+    #coursenum {
+        float:left;
+        margin:30px 60px;
+        clear:left;
+        font-size:18px;
+    }
+
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div class="shoppingcart">
+        <h1>Shopping Cart</h1>
+
+    </div>
+    <p id = "coursenum"> 0 Courses in the cart </p>
+    <div id="cart_items">
+      
+    </div>
+
+</body>
+</html>
+
+<script>
+var cart_data = null
+    if(cart_data == null){
+       var div =  document.getElementById("cart_items")
+       div.setAttribute("class", "cart_item")
+       
+       var img = document.createElement("img")
+       img.src = "https://s.udemycdn.com/browse_components/flyout/empty-shopping-cart-v2.jpg"
+
+
+       var para = document.createElement("p")
+       para.textContent = "Your cart is empty. Keep shopping to find a course"
+
+       var button = document.createElement("button")
+       button.textContent = "Keep shopping"
+       button.setAttribute("class", "buttons")
+       div.append(img,para,button)
+    }
+
+</script>
