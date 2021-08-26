@@ -50,7 +50,7 @@
 #home-top {
     
   
-    border: 1px solid black;
+   
     margin:40px 0px;
     display:grid;
     height:380px;
@@ -92,6 +92,20 @@
 .course-section > p {
     font-size: 22px;
 }
+.course-flex {
+    display:flex;
+    flex-direction: row;
+    gap:15px;
+    margin-top:25px;
+  
+
+}
+.course-flex > a {
+    font-size: 18px;
+    text-decoration: none;
+    color:black;
+    
+}
 
 
     
@@ -106,7 +120,7 @@
         <input id="search_bar" type="text" placeholder="Search for anything">
         <h3>Udemy business</h3>
         <h3>Teach on Udemey</h3>
-        <h3>🛒</h3>
+        <h3><i class="fas fa-shopping-cart"></i></h3>
         <button id="log_in" ><a class="color_1" href="Lon_in_Page.html">Log In</a></button>
         <button id="sign_up"><a class="color" href="signupPage.html">Sign Up </a></button>
     </div>
@@ -125,7 +139,20 @@
         <div class="course-section">
             <h1 id = "b-font">A broad selection of courses</h1>
             <p>Choose from 155,000 online video courses with new additions published every month</p>
+            <div class="course-flex">
+                <a href="">Python</a>
+                <a href="">Excel</a>
+                <a href="">Web Development</a>
+                <a href="">Javascript</a>
+                <a href="">Data Science</a>
+                <a href="">AWS certification</a>
+                <a href="">Drawing</a>
+            </div>
         </div>
+
+
+        <div class="3para"></div>
+
 
 
 
