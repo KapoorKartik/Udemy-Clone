@@ -83,22 +83,24 @@
             border: 1px solid white ;
             height: 50px;
         }
-        #search_bar > input{
+        #search_box > input{
             flex-grow: 2;
-            border: 1px solid black;
+            border: 0px solid black;
             width: 95%;
-            height: 90%;
+            height: 30px;
             border-radius: 30px;
         }
-        #search_bar {
+        .search-btn {
+            width: 20px;
+            height: 20px;
+        }
+        #search_box {
             flex-grow: 2;
             margin-bottom: 1%;
             display: flex;
             margin-top: 5px;
-        }
-        #search_bar > img {
-            width: 20px;
-            height: 20px;
+            border: 1px solid black;
+            border-radius: 40px;
         }
         .header_text {
             font-size: .9rem;
@@ -151,8 +153,10 @@
     <div class="header_text" id="Categories_btn">
         Categories
     </div>
-    <div id="search_bar">
-       
+    <div id="search_box">
+       <a href="#" >
+           <img class="search-btn"  src="https://img.icons8.com/material-sharp/2x/search.png" />
+       </a>
         <input  type="text" placeholder="Search for anything"  />
     </div>
     <div class="header_text">Udemy business</div>
