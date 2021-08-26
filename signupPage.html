@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+ <html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=divice-width,initial-scal=1.0'>
+<title>Document</title>
+<style>
+ .udmey{
+     width: 100%;
+    
+ }
+ #nav_bar{
+     display: grid;
+     grid-template-columns: 10% 10% 38% 10% 10% 2% 6% 6%;
+     gap: 1%;
+     height: 30px;
+     
+ }
+ #search_bar{
+     border-radius: 45%;
+     border :solid black 2px;
+     height: 30px;
+ }
+ #log_in{
+     border: solid 2px;
+     text-align: center;
+     height: 45px;
+     font-size: 16px;
+ }
+ #sign_up{
+     border: solid black 2px;
+     background-color: black;
+     color: white;
+     text-align: center;
+     height: 45px;
+     font-size: 16px;
+ }
+.color{
+    color: white;
+}
+#sign_up_page{
+    display: grid;
+    align-items: center;
+    gap: 2%;
+    margin-left: 35%;
+    margin-right: 35%;
+    
+}
+#top{
+    display: grid;
+    grid-template-rows: 10% 70%;
+    gap: 15%;
+}
+.already{
+    /* align-items: center; */
+    display: flex;
+}
+.name{
+    padding: 3%;
+    font-size: 20px;
+}
+.sign{
+    padding: 3%;
+    background-color: purple;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+.color_1{
+    color: black;
+}
+</style>
+</head>
+<body>
+    <div id="top">
+    <div id="nav_bar">
+        <img class="udmey" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg">
+        <h3>Categories</h3>
+        <input id="search_bar" type="text" placeholder="Search for anything">
+        <h3>Udemy business</h3>
+        <h3>Teach on Udemey</h3>
+        <h3>🛒</h3>
+        <button id="log_in" ><a class="color_1" href="Lon_in_Page.html">Log In</a></button>
+        <button id="sign_up"><a class="color" href="signupPage.html">Sign Up </a></button>
+    </div>
+    <div id="sign_up_page">
+        <h2>Sign Up and Start Learning! </h2>
+        <div></div>
+        
+        <input class="name" type="text" placeholder="Full Name">
+        <input class="name" type="email" placeholder="Email">
+        <input  class="name" type="password" placeholder="Password">
+   
+        <h4>I'm in for emails with exciting discounts and 
+            personalized recommendations</h4>
+        <button class="sign">Sign Up</button>
+        <p>By sign up, you agree to our Ters of Use and Privacy Policy.</p>
+        <div></div>
+        <div class="already">
+        <h3>Already have an account?</h3>
+        <h3><a class="color_1" href="Lon_in_Page.html">Log In</a></h3> 
+        
+       </div>   
+    </div>
+    </div>
+</body>
+</html>
+ 
+ 
