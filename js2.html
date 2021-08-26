@@ -42,14 +42,23 @@
     grid-template-columns: 280px 280px;
     padding:5px;
  }
+#box-2-2{
+    display: grid;
+    gap: 15px;
+}
+#box-btn-1{
+    background-color: rgb(185, 45, 185);
+    padding: 15px;
+    color: white;
 
+}
 </style>
 </head>
 <body>
     <div>
         <h1 style="text-align: center; background-color: blue;">Heading</h1>
     </div>
-
+    <div class="parent-div">
     <div id="box-col">
     <div id="box-main">
     <div id="box-1">
@@ -68,8 +77,8 @@
         <div>
             <img src="https://img-c.udemycdn.com/course/240x135/851712_fc61_6.jpg"/>
             <h1>₹525</h1>
-            <button>Go to cart</button>
-            <button>Buy now</button>
+            <div id="box-2-2" ><button id="box-btn-1">Go to cart</button>
+            <button id="box-btn-2">Buy now</button></div>
             <h5>30-Day Money-Back Guarantee</h5>
             <h4>This course includes:</h4>
             <h5>68 hours on-demand video</h5>
@@ -108,6 +117,7 @@
                 <p>Practice your skills with 50+ challenges and assignments (solutions included)</p>
                 <p>Design your unique learning path according to your goals: course pathways</p>
             </div>
+        </div>
         </div>
 </body>
 </html>
