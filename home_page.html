@@ -103,9 +103,98 @@
 .course-flex > a {
     font-size: 18px;
     text-decoration: none;
-    color:black;
+    color:rgb(44, 44, 44);
+    font-weight: 600;
     
 }
+a#a1:hover {
+    color:rgb(0, 0, 0)
+}
+a#a2:hover {
+    color:rgb(0, 0, 0)
+}
+a#a3:hover {
+    color:rgb(0, 0, 0)
+}
+a#a4:hover {
+    color:rgb(0, 0, 0)
+}
+a#a5:hover {
+    color:rgb(0, 0, 0)
+}
+a#a6:hover {
+    color:rgb(0, 0, 0)
+}
+a#a7:hover {
+    color:rgb(0, 0, 0)
+}
+.thpara {
+    background-color:#f5fffc;
+    display:flex;
+    flex-direction:row;
+    font-size: 18px;
+    color:rgb(44, 44, 44);
+    font-weight: 600;
+    width:100%;
+    margin-top:5%;
+
+    
+
+}
+.thpara > div {
+    width:32%;
+   
+}
+.instructor-box , .business-box{
+    display:flex;
+    flex-direction:row;
+    width:70%;
+    margin:auto;
+    margin-top:5%;
+   
+}
+.instructor-box > .content {
+    width:45%;
+   
+    margin:10%;
+    
+}
+.business-box > .content {
+   
+    margin:10% 6%;
+    width:45%;
+}
+.business-box > .content > img {
+    width:70%;
+}
+.business-box > .img-box {
+    
+    width:45%;
+   
+
+}
+
+.content > p{
+    font-size: 22px;
+}
+.trusted {
+    background-color:f5fffc;
+    text-align: center;
+    margin-top:5%;
+
+}
+.flex-image {
+    display:flex;
+    flex-direction: row;
+    margin: 1% 30%;
+}
+.flex-image img {
+    margin:3%;
+
+}
+
+
+
 
 
     
@@ -140,21 +229,96 @@
             <h1 id = "b-font">A broad selection of courses</h1>
             <p>Choose from 155,000 online video courses with new additions published every month</p>
             <div class="course-flex">
-                <a href="">Python</a>
-                <a href="">Excel</a>
-                <a href="">Web Development</a>
-                <a href="">Javascript</a>
-                <a href="">Data Science</a>
-                <a href="">AWS certification</a>
-                <a href="">Drawing</a>
+                <a id = "a1"  href="">Python</a>
+                <a  id = "a2" href="">Excel</a>
+                <a  id = "a3"href="">Web Development</a>
+                <a  id = "a4" href="">Javascript</a>
+                <a  id = "a5" href="">Data Science</a>
+                <a  id = "a6" href="">AWS certification</a>
+                <a  id = "a7" href="">Drawing</a>
             </div>
         </div>
 
 
-        <div class="3para"></div>
+        <div class="thpara">
+            <div>
+                <p>Learn in-demand skills with over 155000 video courses</p>
+            </div>
+            <div>
+                <p>Choose courses taught by real-world experts</p>
+            </div>
+            <div>
+                <p>Learn at your own pace, with lifetime access on mobile and desktop</p>
+            </div>
 
+        </div>
+
+        <div class="instructor-box">
+            <div class="img-box">
+                <img src="https://s.udemycdn.com/home/non-student-cta/instructor-1x-v3.jpg" alt="">
+            </div>
+            <div class = "content">
+                <h1>Become an Instructor</h1>
+                <p>Instructors from all around the world millions of students on Udemy.We provide the tools and skills to teach what you love.</p>
+
+            </div>
+        </div>
+
+        <div class="trusted">
+            <h1>Trusted by companies of all sizes</h1>
+            <div class = "flex-image">
+               
+                    <img src="https://s.udemycdn.com/partner-logos/v4/apple-dark.svg" alt="">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/box-dark.svg" alt="">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/volkswagen-dark.svg" alt="">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/netflix-dark.svg" alt="">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/eventbrite-dark.svg" alt="">
+
+              
+               
+            </div>
+        </div>
+
+        <div class="business-box">
+           
+            <div class = "content">
+                <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-ub.svg" alt="">
+                <p>Get unlimited access to 6,000+ of Udemy’s top courses for your team. Learn and improve skills across business, tech, design, and more.
+
+                </p>
+
+            </div>
+            <div class="img-box">
+                <img src="https://s.udemycdn.com/home/non-student-cta/ub-1x-v3.jpg" alt="">
+            </div>
+           
+          
+            
+        </div>
 
 
 
 </body>
 </html>
+<script>
+
+
+    
+
+    
+    // a1.addEventListener("mouseover", changeBackground)
+    // a1.addEventListener("mouseout", changeBackground1)
+    // a2.addEventListener("mouseover", changeBackground)
+    // a3.addEventListener("mouseover", changeBackground)
+    // a4.addEventListener("mouseover", changeBackground)
+    // a5.addEventListener("mouseover", changeBackground)
+    // a6.addEventListener("mouseover", changeBackground)
+    // a7.addEventListener("mouseover", changeBackground)
+   
+
+
+
+
+ 
+
+</script>
