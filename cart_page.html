@@ -114,7 +114,7 @@
     background-color: black;
     margin:0px;
     width:100%;
-    height:300px;
+    height:450px;
     border:1px solid black;
     margin-top:5%;
 
@@ -127,21 +127,76 @@
 .flex-bo {
     display: flex;
     flex-direction: row;
+    gap:8%;
     
 }
 .flex-bo h2 {
     color:white;
-    margin:7% 4%;
+    margin:6% 4%;
     font-size: 20px;
+   
+    width:100%;
+    margin-right:10%
 }
 .flex-image {
     display:flex;
     flex-direction: row;
-    margin: 1% 5%
+    margin: 1% 2%;
+   
+    width:40%;
 }
 .flex-image img {
     margin:3%;
 
+}
+
+.logo-img > img {
+    width:6%;
+    float:left;
+    margin-left:3%;
+    margin-bottom:3%;
+
+}
+.logo-img > div{
+    float:right;
+    color:white;
+    margin-right:3%;
+}
+.footer-link {
+    display: grid;
+    margin:20px 20px 30px 30px;
+    width:60%;
+    grid-template-columns:28% 28% 28%;
+    grid-template-rows: 10% 10% 10% 10% 10%;
+    gap:5%;
+    color:white;
+    /* border: 3px solid white */
+
+}
+.footer-link >div:nth-child(12) {
+    grid-row-start: 5;
+}
+.glob {
+    float:right;
+    background-color: black;
+    /* border: 3px solid white */
+}
+.final-flex {
+    /* border:3px solid white; */
+    display: flex;
+    flex-direction: row;
+    
+}
+.final-flex > .glob  {
+    height:15%;
+    width:10%;
+    margin-left:300px;
+    float:right;
+    background-color: black;
+    
+}
+hr {
+    border:0.05px solid grey
 }
 
     
@@ -193,7 +248,42 @@
                 <img src="https://s.udemycdn.com/partner-logos/v4/netflix-dark.svg" alt="">
                 <img src="https://s.udemycdn.com/partner-logos/v4/eventbrite-dark.svg" alt="">
              </div>
-        </div>
+            </div>
+            <hr>
+             <div class="final-flex">
+                <div class="footer-link">
+                    <div><p>Udemy Business</p></div>
+                    <div><p>Careers</p></div>
+                    <div><p>Terms</p></div>
+                    <div><p>Teach on Udemy</p></div>
+                    <div><p>Blog</p></div>
+                    <div><p>Privacy policy</p></div>
+                    <div><p>Get the App</p></div>
+                    <div><p>Help and support</p></div>
+                    <div><p>Sitemap</p></div>
+                    <div><p>About us</p></div>
+                    <div><p>Affiliate</p></div>
+                    <div><p>Contact us</p></div>
+                </div>
+                <!-- <div class= "glob">
+                    <button id="globe1"><img src="https://cdn0.iconfinder.com/data/icons/mobile-apps-settings-linear-white-with-black-backg/2048/439_-_Browser-256.png"/> 
+                        <span>English</span>
+    
+                     </button>
+                    <div class="clear"></div>
+                </div> -->
+            </div>
+            
+            <div class="logo-img">
+
+                
+                <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="">
+                <div> © 2021 Udemy, Inc</div>
+                </div>
+      
+
+
+
     </div>
 
 </body>
