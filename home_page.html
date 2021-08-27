@@ -6,57 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style type = "text/css">
-    * {
-        margin:5px;
-    }
- .udmey{
-     width: 100%;
-    
- }
- #nav_bar{
-     display: grid;
-     grid-template-columns: 10% 10% 38% 10% 10% 2% 6% 6%;
-     gap: 1%;
-     height: 30px;
-     
- }
- #search_bar{
-     border-radius: 45%;
-     border :solid black 2px;
-     height: 30px;
- }
- #log_in{
-     border: solid 2px;
-     text-align: center;
-     height: 45px;
-     font-size: 16px;
- }
- #sign_up{
-     border: solid black 2px;
-     background-color: black;
-     color: white;
-     text-align: center;
-     height: 45px;
-     font-size: 16px;
- }
-.color{
-    color: white;
-}
+     #header {
+            display: flex;
+            background: white;
+        }
+        #udemy_logo  {
+            width: 100px;
+            border: 1px solid white ;
+            height: 50px;
+        }
+        #search_box > input{
+            flex-grow: 2;
+            border: 0px solid black;
+            width: 95%;
+            height: 30px;
+            border-radius: 30px;
+        }
+        .search-btn {
+            width: 20px;
+            height: 20px;
+        }
+        #search_box {
+            flex-grow: 2;
+            margin-bottom: 1%;
+            display: flex;
+            margin-top: 5px;
+            border: 1px solid black;
+            border-radius: 40px;
+        }
+        .header_text {
+            font-size: .9rem;
+            font-weight: 400;
+            line-height: 1.4;
+            margin-top: 20px;
+        }
+        
+       #sign_up {
+           background: black;
+           border: 1px solid black;
+           width: 90px;
+           margin: 10px 3px;
+           font-weight: bold;
+           font-size: 1.1rem;
+       }
+       #log_in {
+           background: white;
+           border: 1px solid black;
+           width: 90px;
+           margin: 10px auto;
+           font-weight: bold;
+           font-size: 1.1rem;
+       }
+       #cart {
+           background: white;
+           border: 0px solid black;
+       }
+       #cart > img {
+        width: 30px;
+           height: 30px;
+       }
+       #globe {
+        background: white;
+           border: 1px solid black;
+           margin: 10px 3px;
+       }
+       #globe >img {
 
-.color_1{
-    color: black;
-} 
+        width: 20px;
+           height: 20px;
+       }
+       * {
+            margin: 5px;
+        }
+
+
+        .color {
+            color: white;
+        }
+
+        .color_1 {
+            color: black;
+        }
+   
 
 #home-top {
-    
-  
-   
-    margin:40px 0px;
+    margin:5px 0px;
     display:grid;
     height:380px;
-    background-image: url(https://img-c.udemycdn.com/notices/web_banner/image_udlite/83e8f763-8c2e-45a4-a4f7-f91fd48e500d.jpg);
-    background-size: contain;
+    background-image: url(https://img-c.udemycdn.com/notices/web_banner/image_udlite/92a752b4-2f5b-45c7-a451-d84b32ccb0cf.jpg);
+   
     grid-template-columns: 25%;
+    background-repeat: no-repeat;
    
 
 }
@@ -82,16 +122,17 @@
     font-size: 20px;
 }
 .leftbox > input {
-    font-size: 30px;
+    font-size: 24px;
    
 }
 .leftbox > input::placeholder {
-    font-size: 16px;
+    font-size: 12px;
     padding:10px;
 }
 .course-section > p {
     font-size: 22px;
 }
+
 .course-flex {
     display:flex;
     flex-direction: row;
@@ -137,13 +178,29 @@ a#a7:hover {
     font-weight: 600;
     width:100%;
     margin-top:5%;
-
+  
     
 
 }
 .thpara > div {
-    width:32%;
+    display: flex;
+    flex-direction: row;
+    width:28%;
+    height:2%;
+
+
    
+   
+}
+.thpara > div:nth-child(2){
+    margin-left:8%;
+    margin-right:8%;
+}
+.thpara > div > img {
+    width:10%;
+    height:10%;
+    
+
 }
 .instructor-box , .business-box , .transform{
     display:flex;
@@ -204,8 +261,91 @@ a#a7:hover {
 
 
 }
+.logo-img > img {
+    width:6%;
+    float:left;
+    margin-left:3%;
+    margin-bottom:3%;
 
+}
+.logo-img > div{
+    float:right;
+    color:white;
+    margin-right:3%;
+}
+.footer-link {
+    display: grid;
+    margin:20px 20px 30px 30px;
+    width:60%;
+    grid-template-columns:28% 28% 28%;
+    grid-template-rows: 10% 10% 10% 10% 10%;
+    gap:5%;
+    color:white;
+    /* border: 3px solid white */
 
+}
+.footer-link >div:nth-child(12) {
+    grid-row-start: 5;
+}
+.glob {
+    float:right;
+    background-color: black;
+    /* border: 3px solid white */
+}
+.final-flex {
+    /* border:3px solid white; */
+    display: flex;
+    flex-direction: row;
+    
+}
+.final-flex > .glob  {
+    height:15%;
+    width:10%;
+    margin-left:300px;
+    float:right;
+    background-color: black;
+    
+}
+
+#globe1 {
+        background:black;
+        color:white;
+           /* border: 3px solid red; */
+           margin: 5px 3px;
+       }
+       #globe1 >img {
+           padding:5px;
+           
+
+        width: 20px;
+           height: 20px;
+       } 
+       #globe1 > span {
+           padding:0px;
+           margin:0px;
+           margin-bottom:10px;
+           font-size:16px;
+           border:1px solid white
+        
+       }
+       .img-small {
+           width:5%;
+       }
+/* 
+#globe {
+        background:white;
+           border: 1px solid white;
+           margin: 10px 3px;
+       }
+       #globe >img {
+
+        width: 20px;
+           height: 20px;
+       } */
+/* 
+.clear {
+    clear:both;
+} */
 
 
 
@@ -215,25 +355,36 @@ a#a7:hover {
     </style>
 </head>
 <body>
-    <div id="nav_bar">
-        <img class="udmey" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg">
-        <h3>Categories</h3>
-        <input id="search_bar" type="text" placeholder="Search for anything">
-        <h3>Udemy business</h3>
-        <h3>Teach on Udemey</h3>
-        <h3><i class="fas fa-shopping-cart"></i></h3>
-        <button id="log_in" ><a class="color_1" href="Lon_in_Page.html">Log In</a></button>
-        <button id="sign_up"><a class="color" href="signupPage.html">Sign Up </a></button>
+    <div id="header">
+        <div id="udemy_logo">
+            <a href="home_page.html" >
+            <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy" href="home_page.html"  />
+            </a>
+        </div>
+        <div class="header_text" id="Categories_btn">
+            Categories
+        </div>
+        <div id="search_box">
+           <a href="#" >
+               <img class="search-btn"  src="https://img.icons8.com/material-sharp/2x/search.png" />
+           </a>
+            <input  type="text" placeholder="Search for anything"  />
+        </div>
+        <div class="header_text">Udemy Business</div>
+        <div class="header_text">Teach on Udemy</div>
+        <a href="cart_page.html"><button id="cart"><img src="https://cdn3.iconfinder.com/data/icons/shopping-cart-19/200/457-128.png" /></button></a>
+        <button id="log_in" ><a style="color : black ;  text-decoration: none;" href="login_page.html" >Log In</a></button>
+        <button id="sign_up"><a style="color : white ;  text-decoration: none;" href="signup_page.html">Sign Up </a></button>
+        <button id="globe"><img src="https://cdn3.iconfinder.com/data/icons/media-1-3/32/Internet-Globe-Communication-128.png"/></button>
     </div>
-    
 
         <div id = "home-top">
             <img src="" alt="">
            
             <div class="leftbox">
-                    <h1 id = "b-font">Courses as low as ₹525</h1>
-                   <p>For an extra 10% off sale prices, use PLUS10 in cart. Ends Aug. 26.</p> 
-                   <input id = "seach-box type="text" placeholder="What do you want to learn ?">
+                    <h1 id = "b-font">Learning that gets you</h1>
+                   <p>Skills for your present (and your future). Get started with us.</p> 
+                   <input id = "seach-box" type="text" placeholder="What do you want to learn ?">
                 </div>
         </div>
 
@@ -254,13 +405,16 @@ a#a7:hover {
 
         <div class="thpara">
             <div>
-                <p>Learn in-demand skills with over 155000 video courses</p>
+                <img src="https://cdn3.iconfinder.com/data/icons/movie-video/512/Icon_6-128.png" alt="">
+                <span>Learn in-demand skills with over 155000 video courses</span>
             </div>
             <div>
-                <p>Choose courses taught by real-world experts</p>
+                <img src="https://cdn0.iconfinder.com/data/icons/multimedia-solid-30px/30/star_rate_favorite_bookmark-128.png" alt="">
+                <span>Choose courses taught by real-world experts</span>
             </div>
             <div>
-                <p>Learn at your own pace, with lifetime access on mobile and desktop</p>
+                <img src="https://cdn2.iconfinder.com/data/icons/picons-basic-3/57/basic3-154_infinity-128.png" alt="">
+                <span>Learn at your own pace, with lifetime access on mobile and desktop</span>
             </div>
 
         </div>
@@ -322,6 +476,37 @@ a#a7:hover {
 
 
         <div id="footer">
+            <div class="final-flex">
+            <div class="footer-link">
+                <div><p>Udemy Business</p></div>
+                <div><p>Careers</p></div>
+                <div><p>Terms</p></div>
+                <div><p>Teach on Udemy</p></div>
+                <div><p>Blog</p></div>
+                <div><p>Privacy policy</p></div>
+                <div><p>Get the App</p></div>
+                <div><p>Help and support</p></div>
+                <div><p>Sitemap</p></div>
+                <div><p>About us</p></div>
+                <div><p>Affiliate</p></div>
+                <div><p>Contact us</p></div>
+            </div>
+            <!-- <div class= "glob">
+                <button id="globe1"><img src="https://cdn0.iconfinder.com/data/icons/mobile-apps-settings-linear-white-with-black-backg/2048/439_-_Browser-256.png"/> 
+                    <span>English</span>
+
+                 </button>
+                <div class="clear"></div>
+            </div> -->
+        </div>
+
+
+            <div class="logo-img">
+
+                
+                <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="">
+                <div> © 2021 Udemy, Inc</div>
+                </div>
 
         </div>
 
