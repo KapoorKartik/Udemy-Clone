@@ -105,9 +105,7 @@
         font-size:20px;
     }
     #coursenum {
-        float:left;
-        margin:30px 60px;
-        clear:left;
+        margin:30px 10px 30px 30px;
         font-size:18px;
     }
     #footer {
@@ -198,7 +196,31 @@
 hr {
     border:0.05px solid grey
 }
+.cart_items {
+    border: 2px solid black;
+    display:flex;
+    flex-direction:column;
+}
 
+.cart-div {
+    width:30%;
+    height:70px;
+    margin-left:6%;
+    border:1px solid grey;
+    display: flex;
+    
+}
+.cart-div img {
+    width:30%;
+    float:left;
+}
+.total-div {
+    float:right;
+    width:15%;
+    margin:1%;
+    height:5%;
+    color:purple;
+}
     
     
     
@@ -237,6 +259,7 @@ hr {
     <div id="cart_items">
       
     </div>
+    <div id="total_prie"></div>
 
     <div id="footer">
         <div class = "flex-bo">
@@ -290,9 +313,13 @@ hr {
 </html>
 
 <script>
-var cart_data = null
-var total = 0
-    if(cart_data == null){
+    let cart_data = JSON.parse(localStorage.getItem("udemy_cart"))
+    
+// let cart_data = null
+        var total = 0
+        var count = 0
+        var total_price = 0 ;
+    if(cart_data == {}){
        var div =  document.getElementById("cart_items")
        div.setAttribute("class", "cart_item")
        
@@ -309,6 +336,107 @@ var total = 0
        div.append(img,para,button)
        var p_item = document.getElementById("coursenum")
        p_item.textContent = `${total} Courses in the cart`
+    }
+    else {
+    
+        cart_data.forEach(function(product){
+            let parent =  document.getElementById("cart_items")
+            // div.setAttribute("class", ".cart-items")
+
+            let divi = document.createElement("div")
+
+            // divi.setAttribute("class", "cart-div")
+
+            let image = document.createElement("img")
+
+            image.src = product.image
+
+            let c_name = document.createElement("h3")
+
+            c_name = product.name
+
+            let brea = document.createElement("br")  
+            
+            let bre = document.createElement("br")  
+
+
+
+            let p_price = document.createElement("p")
+
+            p_price = `Price - ${product.price}`
+
+
+            let author = document.createElement("p")
+
+            author = `by${product.author}`
+
+
+            divi.append(image, c_name,bre, author,brea, p_price)
+           
+            count++
+            total = total + count
+
+            parent.append(divi)
+
+            let str_price = ""
+            for(var i = 0; i < product.price.length; i++){
+
+                if(product.price[i] == "₹"){
+                continue
+             }  
+             else {
+                str_price = str_price + product.price[i]
+             }
+
+            }
+
+            
+           
+            
+
+
+
+
+            // var total_div = document.createElement("div")
+            // total_div.setAttribute("class", "total-div")
+
+          
+
+            total_price = total_price + Number(str_price)
+            console.log("total" + total_price)
+
+               
+                
+           
+            let final_price = document.getElementById("total_prie")
+            final_price.setAttribute("class", "total-div")
+            final_price.textContent =  "Total: " + "₹"+total_price
+             //.append(pura_total)
+           
+            // total_show.append(total_div)
+
+            
+           
+           
+
+
+            var p_item = document.getElementById("coursenum")
+             p_item.textContent = `${count} Courses in the cart`
+
+
+        })
+       
+       
+            
+         
+
+            // total_show.append(real_price)
+           
+
+        
+       
+
+
     }
 
 </script>
