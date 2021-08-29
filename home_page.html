@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online courses-Learn Anything, On Yours Schedule | Udemy </title>
     <style type = "text/css">
+    body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    h1, h2 {
+        font-family:SuisseWorks
+    }
      #header {
             display: flex;
             background: white;
@@ -17,10 +23,12 @@
         }
         #search_box > input{
             flex-grow: 2;
-            border: 0px solid black;
+            border: 1px solid white;
             width: 95%;
             height: 30px;
-            border-radius: 30px;
+            margin-right:15px;
+            /* border-radius: 30px; */
+            outline:none;
         }
         .search-btn {
             width: 20px;
@@ -47,7 +55,7 @@
            width: 90px;
            margin: 10px 3px;
            font-weight: bold;
-           font-size: 1.1rem;
+           font-size: 0.8rem;
        }
        #log_in {
            background: white;
@@ -55,7 +63,7 @@
            width: 90px;
            margin: 10px auto;
            font-weight: bold;
-           font-size: 1.1rem;
+           font-size: 0.8rem;
        }
        #cart {
            background: white;
@@ -411,6 +419,16 @@ a#a7:hover {
         font-size: 20px;
         color:black;
     }
+    #search2 {
+        border: 1px solid black;
+        display:flex;
+
+    }
+    #search-box {
+        flex-grow:2;
+        outline:none;
+        border:none;
+    }
    
 
 
@@ -431,7 +449,7 @@ a#a7:hover {
             Categories
         </div>
         <div id="search_box">
-           <a href="#" >
+           <a href="course_1_page.html" >
                <img class="search-btn"  src="https://img.icons8.com/material-sharp/2x/search.png" />
            </a>
             <input  type="text" placeholder="Search for anything"  />
@@ -450,7 +468,12 @@ a#a7:hover {
             <div class="leftbox">
                     <h1 id = "b-font">Learning that gets you</h1>
                    <p>Skills for your present (and your future). Get started with us.</p> 
-                   <input id = "seach-box" type="text" placeholder="What do you want to learn ?">
+                  <div id="search2">
+                    <input id = "search-box" type="text" placeholder="What do you want to learn ?">
+                    <a href="course_1_page.html" >
+                     <img class="search-btn"  src="https://img.icons8.com/material-sharp/2x/search.png" />
+                 </a>
+                  </div>
                 </div>
         </div>
 
@@ -648,6 +671,8 @@ a#a7:hover {
 </body>
 </html>
 <script>
+
+
 
    
 
