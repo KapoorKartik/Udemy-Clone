@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cart_page</title>
     <style type = "text/css">
+      body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    h1, h2 {
+        font-family:SuisseWorks
+    }
     #header {
             display: flex;
             background: white;
@@ -20,6 +26,7 @@
             border: 0px solid black;
             width: 95%;
             height: 30px;
+            margin-right:15px;
              /* border-radius: 30px; */
              outline:none;
         }
@@ -106,8 +113,8 @@
         font-size:20px;
     }
     #coursenum {
-        margin:30px 10px 30px 30px;
-        font-size:18px;
+        margin:30px 0px 30px 70px;
+        font-size:24px;
     }
     #footer {
     background-color: black;
@@ -198,34 +205,145 @@ hr {
     border:0.05px solid grey
 }
 .cart_items {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display:flex;
     flex-direction:column;
+    width:45%;
+    flex-grow:2;
 }
 
 .cart-div {
-    width:30%;
-    height:70px;
-    margin-left:6%;
-    border:1px solid grey;
+   
+    height:60px;
+   
+    
     display: flex;
+    flex-direction:row ;
+    border: 1px ridge rgb(189, 189, 189);
+
     
 }
-.cart-div img {
-    width:30%;
-    float:left;
+
+
+
+#total_prie {
+    color:black;
+    padding-left:10px;
+    padding:0px;
+    font-size:36px;
+
+
 }
-.total-div {
+#checkout_btn {
+    background:purple;
+    color:white;
+    width:100%;
+    height:50px;
+    font-size:18px;
+    border:none;
+    margin:15px 0px;
+}
+#parent-cart {
+    display:flex;
+    margin-left:5%;
+    /* border:1px solid black; */
+    margin-top:3px;
+
+
+}
+#checkout {
     float:right;
-    width:15%;
-    margin:1%;
-    height:5%;
-    color:purple;
+    width:25%;
+    margin:1% ;
+    
+    height:300px;
+    color:black;;
+    font-size:16px;
+    /* border:1px solid blue; */
+
 }
-    
-    
-    
-    
+#coupon {
+    border: 1px solid black;
+    display:flex;
+}
+#inp-coupon {
+    font-size:12px;
+    border:none;
+    outline: none;
+    flex-grow:2;
+
+}  
+#coupon-btn {
+    background-color: purple;
+    font-size: 17px;
+    color:white;
+    height:30px;
+    width:20%;
+    margin:0px;
+    border: none;
+
+}  
+#promotions {
+    font-weight:800;
+    margin-bottom: 15px;
+}
+
+    #applied {
+        color: green;
+    }
+    #not_applied {
+        color: red;
+    }
+
+    .div1-style {
+        /* border:1px solid red; */
+        width:11%;
+        padding:0px;
+
+    }
+    .div1-style img {
+        width:100%;
+        height:100%;
+        margin:0px;
+    }
+
+    .div2-style {
+        flex-grow:2;
+        /* border:1px solid blue; */
+        padding:0px;
+        width:45%;
+        font-weight: 900;
+    }
+     .div2-style p {
+        color:black;
+        font-weight: 300 ;
+       
+       
+    }
+
+    .div3-style {
+        /* border: 1px solid orangered; */
+        width:14%;
+    }
+    .div4-style {
+        /* border:1px solid green; */
+        width:12%;
+        color:purple;
+        font-weight: 600;
+        text-align: center;
+        font-size: 18px;
+        padding-top:12px;
+    }
+  .div3-style > button {
+      color:purple;
+      border:none;
+      background-color: white;
+      margin:1px 3px;
+      font-weight: 500;
+      text-align: right !important;
+
+  }
+
     
     </style>
 </head>
@@ -248,8 +366,8 @@ hr {
         <div class="header_text">Udemy Business</div>
         <div class="header_text">Teach on Udemy</div>
         <a href="cart_page.html"><button id="cart"><img src="https://cdn3.iconfinder.com/data/icons/shopping-cart-19/200/457-128.png" /></button></a>
-        <button id="log_in" ><a style="color : black ;  text-decoration: none;" href="Login_Page.html" >Log In</a></button>
-        <button id="sign_up"><a style="color : white ;  text-decoration: none;" href="signup_Page.html">Sign Up </a></button>
+        <button id="log_in" ><a style="color : black ;  text-decoration: none;" href="login_page.html" >Log In</a></button>
+        <button id="sign_up"><a style="color : white ;  text-decoration: none;" href="signup_page.html">Sign Up </a></button>
         <button id="globe"><img src="https://cdn3.iconfinder.com/data/icons/media-1-3/32/Internet-Globe-Communication-128.png"/></button>
     </div>
     <div class="shoppingcart">
@@ -257,10 +375,44 @@ hr {
 
     </div>
     <p id = "coursenum"></p>
-    <div id="cart_items">
+
+
+    <div id="parent-cart">
+        <div id="cart_items">
       
+        </div>
+        <div id="checkout">
+            <div class= "total_name" >
+                Total:  
+            </div>
+            <h1 id="total_prie">
+            
+            </h1>
+            
+                <a href="checkout.html">
+                    <button id="checkout_btn">
+                
+                    Checkout
+                </button>
+                </a>
+           
+            <div id="promotions">Promotions</div>
+            <div id ="applied"></div>
+            <div id="not_applied"></div>
+            <div id="coupon">
+              
+                <input id = "inp-coupon" type="text" placeholder= "Enter Coupon">
+                <button id = "coupon-btn">Apply</button>
+            </div>
+    
+        </div>
+
+
+
     </div>
-    <div id="total_prie"></div>
+   
+   
+   
 
     <div id="footer">
         <div class = "flex-bo">
@@ -320,7 +472,7 @@ hr {
         var total = 0
         var count = 0
         var total_price = 0 ;
-    if(cart_data == {}){
+    if(cart_data == null){
        var div =  document.getElementById("cart_items")
        div.setAttribute("class", "cart_item")
        
@@ -333,8 +485,15 @@ hr {
 
        var button = document.createElement("button")
        button.textContent = "Keep shopping"
+
+
        button.setAttribute("class", "buttons")
-       div.append(img,para,button)
+       var link = document.createElement("a")
+       link.href = "home_page.html"
+       link.append(button)
+       
+
+       div.append(img,para,link)
        var p_item = document.getElementById("coursenum")
        p_item.textContent = `${total} Courses in the cart`
     }
@@ -342,42 +501,89 @@ hr {
     
         cart_data.forEach(function(product){
             let parent =  document.getElementById("cart_items")
-            // div.setAttribute("class", ".cart-items")
+         parent.setAttribute("class", "cart_items")
 
-            let divi = document.createElement("div")
 
-            // divi.setAttribute("class", "cart-div")
+          // below is row div 
+            let row_div = document.createElement("div")
+
+            row_div.setAttribute("class", "cart-div")
+
+
+            let div1 = document.createElement("div")
+            div1.setAttribute("class", "div1-style")
 
             let image = document.createElement("img")
 
+
             image.src = product.image
+
+            let div2 = document.createElement("div")
+            div2.setAttribute("class", "div2-style")
 
             let c_name = document.createElement("h3")
 
             c_name = product.name
+           // c_name.setAttribute("style", "font-weight:500") not working full row box is hidden when i apply this property
 
             let brea = document.createElement("br")  
+
+            let author = document.createElement("p")
+            
+            author.textContent = `By ${product.author}`
+            //author.setAttribute("style", "font-weight:300")
+
             
             let bre = document.createElement("br")  
 
 
-
-            let p_price = document.createElement("p")
-
-            p_price = `Price - ${product.price}`
+            let div3 = document.createElement("div")
+            div3.setAttribute("class", "div3-style")
 
 
-            let author = document.createElement("p")
+            let remov = document.createElement("button")
+            remov.textContent = "Remove"
+           // remove.setAttribute("id","save-later1")
+            
 
-            author = `by${product.author}`
+            let later = document.createElement("button")
+            later.textContent = "Save for later"
+           // later.setAttribute("id","save-later2")
+            
+          
+
+           
+            let div4 = document.createElement("div")
+
+            div4.setAttribute("class", "div4-style")
+
+              let p_price = document.createElement("p")
 
 
-            divi.append(image, c_name,bre, author,brea, p_price)
+            p_price = product.price
+            
+            div1.append(image)
+
+            div2.append(c_name , author)
+
+            div3.append(remov,later)
+
+
+            div4.append(p_price)
+
+
+
+            row_div.append(div1, div2,div3,div4)
            
             count++
             total = total + count
 
-            parent.append(divi)
+          // row div append to parent div
+            parent.append(row_div)
+
+
+
+
 
             let str_price = ""
             for(var i = 0; i < product.price.length; i++){
@@ -390,10 +596,6 @@ hr {
              }
 
             }
-
-            
-           
-            
 
 
 
@@ -410,8 +612,8 @@ hr {
                 
            
             let final_price = document.getElementById("total_prie")
-            final_price.setAttribute("class", "total-div")
-            final_price.textContent =  "Total: " + "₹"+total_price
+           // final_price.setAttribute("class", "total-div")
+            final_price.textContent =   "₹"+total_price
              //.append(pura_total)
            
             // total_show.append(total_div)
@@ -422,22 +624,41 @@ hr {
 
 
             var p_item = document.getElementById("coursenum")
-             p_item.textContent = `${count} Courses in the cart`
+             p_item.textContent = `${count} Course in cart`
 
 
         })
        
        
-            
          
 
-            // total_show.append(real_price)
-           
+            
 
         
        
 
 
     }
+
+
+    function promo(){
+        var inp = document.getElementById("inp-coupon").value
+        var pri = document.getElementById("total_prie")
+        var coupon_para = document.createElement("p")
+        var  sucess = document.getElementById("applied")
+        var not_sucess = document.getElementById("not_applied")
+        if(inp == "SPECIAL26" || inp == "special26"){
+            pri.textContent =  "₹"+ total_price  * 0.74
+            coupon_para.textContent =   inp + " promo code is applied" 
+
+            sucess.append(coupon_para)
+            
+        }else {
+    coupon_para.textContent = "Invalid promo code";
+            not_sucess.append(coupon_para)
+        }
+    }
+    var btnc = document.getElementById("coupon-btn")
+    btnc.addEventListener("click", promo)
 
 </script>
