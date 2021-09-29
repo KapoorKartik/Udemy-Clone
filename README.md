@@ -1,6 +1,5 @@
 # Udemy-Clone
 ---
-
 ### Screenshot
 ---
 * Landing page
