@@ -8,22 +8,25 @@
 * Akash Kumar Prasad
 * Kartik Kapoor
 
-### Languages and tools used
+### Languages and tools used:
 * HTML
 * CSS
 * Javascript
 * Visual Studio Code
 * Git
 
-### Pages Build
+### Pages Build:
 * Homepage
 * Signup & login page
 * Cart page
 * course page (1 to 5)
 
-### Libraries Used
+### Libraries Used:
 * Google Fonts
 * fonts Awesome
 
-### Summary
+### Summary:
  Our project is to clone www.udemy.com/ We did 10 pages Home page, Cart page, checkout page, Sign up & Login page, 5 course pages. We use the Font Awesome library for icons, Google Fonts library for fonts. To make it interactive with the user we use javascript language. We have used localStorage property to store the users data for Login and for adding items in the cart. Thanks.
+ 
+ ### Use:
+To use the project clone the repository and go inside the folder Udemy_Clone using cd Udemy_Clone. Locate the file home_page.html and run it in the browser.
