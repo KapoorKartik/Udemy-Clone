@@ -1,7 +1,7 @@
 # Udemy-Clone
 ### Screenshot
  * Landing page 
-   ** ![image](https://github.com/KapoorKartik/Udemy-Clone/blob/main/Screenshot/Screenshot%20(557).png?raw=true)
+  ** ![image](https://github.com/KapoorKartik/Udemy-Clone/blob/main/Screenshot/Screenshot%20(557).png?raw=true)
 ### Team Members
 * Irshath Ahamed
 * Rohit Kumar
