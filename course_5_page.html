@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript_course_2</title>
+    <title>JavaScript_course_5</title>
     <style type = "text/css">
     * {
         margin:5px;
@@ -224,24 +224,26 @@
     </div>
     <div class="black-bg">
         <div class="content">
-            <h4 id="deve">WebDevelopment  >  JavaScript</h4>
-        <h1 id="c-name">JavaScript:Understanding the Weird Parts</h1>
-        
-        <h3>Learn modern advanced JavaScript practices and be in the top 10% of JavaScript developers<h3>
+            <h4 id="deve">Development  >  Web Development  >  JavaScript</h4>
+        <h1 id = "c-name">The Complete JavaScript Course 2021</h1>
+        <h1>From Zero to Expert!</h1>
+        <h3>Learn and build projects with pure JavaScript 
+            (No frameworks or libraries)<h3>
         <span><h4  id="best">Bestseller</h4>
-            <h4 id="star">4.7 star</h4>
-            <h4 id="deve">(4527 ratings)</h4>
-            <h4>23,573 students</h4></span>
-         <h3 id="deve">Created by <u  id="a-name">Anthony Alicea</u></h3>
+            <h4 id="star">4.8 star</h4>
+            <h4 id="deve">(26262 ratings)</h4>
+            <h4>85,541 students</h4></span>
+         <h3 id="deve">Created by <u  id= "a-name"> Andre Neigoi</u></h3>
 
         </div>
         <div class="course-box">
             <div id="box-2">
               
-                    <img id = "image" src="https://img-c.udemycdn.com/course/240x135/364426_2991_6.jpg"/>
-                    <h1 id="price">₹7140</h1>
+                    <img id = "image" src="https://img-c.udemycdn.com/course/240x135/1501104_967d_13.jpg"/>
+                    <h1 id="price">₹7861</h1>
                     <div id="box-2-2" >
-                        <button onclick = addcart() id="box-btn-1">Add to cart</button>
+                    <button onclick = addcart() id="box-btn-1">Add to cart</button>
+                    <!-- onclick = "addcart(e)"  -->
                     <button id="box-btn-2">Buy now</button></div>
                     <p id="day">30-Day Money-Back Guarantee</p>
                     <div id="hour"><h3>This course includes:</h3>
@@ -257,7 +259,7 @@
             <div class="box-2-1">
                 <h3>Training 5 or more people?</h3>
                     <p>Get your team access to 6,000+ top Udemy courses anytime, anywhere.</p>
-                    <button class="box-2-2">Try Udemey Business</button>
+                    <button class="box-2-2">Try Udemy Business</button>
                     
             </div>
             </div>
@@ -270,21 +272,20 @@
             <h2>What you'll learn</h2>
             
                 <div id="box-3-1">        
-                    <p>Advanced JavaScript Practices</p>
-                    <p>Object Oriented Programming</p>
-                    <p>Functional Programming</p>
-                    <p>Scope and Execution Context</p>
-                    <p>Inheritance + Prototype Chain</p>
-                    <p>Latest features: ES6, ES7, ES8, ES9, ES10, ES2020</p>
-                    <p>Closures</p>
-                    <p>Asynchronous JavaScript + Event Loop</p>
-                    <p>JavaScript Modules</p>
-                    <p>call(), .apply(), .bind()
-                    <p>Interpreter/ Compiler/ JIT Compile</p>
-                    <p>Higher Order Functions</p>
+                    <p>Modular learning sections & 10 real world projects with pure JavaScript</p>
+                    <p>Master the DOM (document object model) WITHOUT jQuery</p>
+                    <p>Asynchronous programming with Ajax, Fetch API, Promises & Async / Await</p>
+                    <p>Modern OOP: Classes, constructors, prototypal inheritance, encapsulation, etc.</p>
+                    <p>Asynchronous JavaScript: Event loop, promises, async/await, AJAX calls and APIs</p>
+                    <p>Modern tools for 2021 and beyond: NPM, Parcel, Babel and ES6 modules</p>
+                    <p>Get friendly support in the Q&A area</p>
+                    <p>Build 6 beautiful real-world projects for your portfolio (not boring toy apps)</p>
+                    <p>How to think and work like a developer: problem-solving, researching, workflows</p>
+                    <p>Modern ES6+ from the beginning: arrow functions, destructuring, spread operator, optional chaining (ES2020), etc.</p>
+                    <p>Complex concepts like the 'this' keyword, higher-order functions, closures, etc.</p>
                     <p>How to architect your code using flowcharts and common patterns</p>
                     <p>Practice your skills with 50+ challenges and assignments (solutions included)</p>
-                    
+                    <p>Design your unique learning path according to your goals: course pathways</p>
                 </div>
             </div>
 
@@ -293,40 +294,36 @@
 </body>
 </html>
 <script>
-    
-
-  
+  var cart1 = JSON.parse(localStorage.getItem("udemy_cart"))
 
 
-    let btn = document.getElementById("box-btn-1")
-    let cart = JSON.parse(localStorage.getItem("udemy_cart"))
-    function addcart(){
+var btn = document.getElementById("box-btn-1")
+function addcart(){
 
-        let course_details = {
+    let course_details = {
 
-            name: document.getElementById("c-name").textContent,
+        name: document.getElementById("c-name").textContent,
 
-            price: document.getElementById("price").textContent,
+        price: document.getElementById("price").textContent,
 
-            image: document.getElementById("image").src,
+        image: document.getElementById("image").src,
 
-            author: document.getElementById("a-name").textContent,
+        author: document.getElementById("a-name").textContent,
 
 
 
-
-        }
-       
-        cart.push(course_details)
-       // console.log(cart)
-
-        let cart_data = JSON.stringify(cart)
-
-        localStorage.setItem("udemy_cart", cart_data)
-       // btn.removeEventListener("click",addcart())
 
     }
-   /// btn.addEventListener("click", addcart())
+    cart1.push(course_details)
+   // console.log(cart)
 
-   
+    var cart_data = JSON.stringify(cart1)
+
+    localStorage.setItem("udemy_cart", cart_data)
+
+
+}
+//btn.addEventListener("click", addcart())
+
+
 </script>
