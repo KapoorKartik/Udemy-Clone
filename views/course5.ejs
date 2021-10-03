@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_course_5</title>
+    <style type = "text/css">
+    * {
+        margin:5px;
+
+    }
+    body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    h1, h2 {
+        font-family:SuisseWorks
+    }
+    #header {
+            display: flex;
+            background: white;
+        }
+        #udemy_logo  {
+            width: 100px;
+            border: 1px solid white ;
+            height: 50px;
+        }
+        #search_box > input{
+            flex-grow: 2;
+            border: 0px solid black;
+            width: 95%;
+            height: 30px;
+            margin-right:15px;
+            /* border-radius: 30px; */
+            outline:none;
+        }
+        .search-btn {
+            width: 20px;
+            height: 20px;
+        }
+        #search_box {
+            flex-grow: 2;
+            margin-bottom: 1%;
+            display: flex;
+            margin-top: 5px;
+            border: 1px solid black;
+            border-radius: 40px;
+        }
+        .header_text {
+            font-size: .9rem;
+            font-weight: 400;
+            line-height: 1.4;
+            margin-top: 20px;
+        }
+        
+       #sign_up {
+           background: black;
+           border: 1px solid black;
+           width: 90px;
+           margin: 10px 3px;
+           font-weight: bold;
+           font-size: 0.8rem;
+       }
+       #log_in {
+           background: white;
+           border: 1px solid black;
+           width: 90px;
+           margin: 10px auto;
+           font-weight: bold;
+           font-size: 0.8rem;
+       }
+       #cart {
+           background: white;
+           border: 0px solid black;
+       }
+       #cart > img {
+        width: 30px;
+           height: 30px;
+       }
+       #globe {
+        background: white;
+           border: 1px solid black;
+           margin: 10px 3px;
+       }
+       #globe >img {
+
+        width: 20px;
+           height: 20px;
+       }
+
+    .black-bg {
+        width:100%;
+        background-color: black;
+        /* border:2px solid red; */
+        height:450px;
+        float:left;
+        clear:left;
+    }
+    .content {
+        /* border:3px solid blue; */
+        height:350px;
+        width:600px;
+        margin-left:20%;
+        margin-top:3%;
+        float:left;
+        color:white;
+       
+        
+    }
+    .course-box {
+        height:750px;
+        border:3px solid whitesmoke;
+        width:300px;
+        float:left;
+        margin-left:5%;
+        margin-top:3%;
+        color:black;
+        background-color: white;
+
+
+    }
+    .course-content {
+        width:600px;
+        border: 3px solid whitesmoke;
+        height:500px;
+        float:left;
+        margin-left:20%;
+        margin-top:80px;
+    }
+
+    #box-2 {
+        display:flex;
+        flex-direction: column;
+       
+
+    }
+    #box-2  img{
+        width:100%;
+        height:6%;
+        
+    }
+    img{
+        margin-left: 0%;
+    }
+    #box-3-1{
+    margin-top: 30px;
+    width: 560px;
+    display: grid;
+    grid-template-rows:65px 65px 65px 65px 65px 65px 65px 65px;
+    grid-template-columns: 280px 280px;
+    padding:5px;
+ }
+  #box-btn-1{
+      background-color: blueviolet;
+      padding: 5%;
+      width: 260px;
+      color: white;
+      font-weight: 300;
+      font-size: 20px ;
+  }  
+  #box-btn-2{
+      padding: 5%;
+      width: 260px;
+      font-size: 20px;
+      font-weight: 300;
+      background-color: white;
+  }
+  
+  
+ .box-2-2{
+    padding: 2%;
+      width: 260px;
+      font-size: 20px;
+      font-weight: 300;
+      background-color: white;
+    } 
+    #day{
+        text-align: center;
+        font-size: 12px;
+    }
+    #hour{
+        font-size: 14px;
+    }
+    .class{
+        text-align: center;
+    }
+    #deve{
+        color: blueviolet;
+    }
+    #star{
+        color: gold;
+    }
+    #best{
+        border: solid ;
+        background-color: goldenrod;
+        color: black;
+        width: 70px;
+    }
+   
+    </style>
+</head>
+<body>
+    
+    <div id="header">
+        <div id="udemy_logo">
+            <a href="/" >
+            <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy" href="home_page.html"  />
+            </a>
+        </div>
+        <div class="header_text" id="Categories_btn">
+            Categories
+        </div>
+        <div id="search_box">
+           <a href="/course1" >
+               <img class="search-btn"  src="https://img.icons8.com/material-sharp/2x/search.png" />
+           </a>
+            <input  type="text" placeholder="Search for anything"  />
+        </div>
+        <div class="header_text">Udemy Business</div>
+        <div class="header_text">Teach on Udemy</div>
+        <a href="/cart"><button id="cart"><img src="https://cdn3.iconfinder.com/data/icons/shopping-cart-19/200/457-128.png" /></button></a>
+        <button id="log_in" ><a href="/login" >Log In</a></button>
+        <button id="sign_up"><a href="/signup">Sign Up </a></button>
+        <button id="globe"><img src="https://cdn3.iconfinder.com/data/icons/media-1-3/32/Internet-Globe-Communication-128.png"/></button>
+    </div>
+    <div class="black-bg">
+        <div class="content">
+            <h4 id="deve">Development  >  Web Development  >  JavaScript</h4>
+        <h1 id = "c-name">The Complete JavaScript Course 2021</h1>
+        <h1>From Zero to Expert!</h1>
+        <h3>Learn and build projects with pure JavaScript 
+            (No frameworks or libraries)<h3>
+        <span><h4  id="best">Bestseller</h4>
+            <h4 id="star">4.8 star</h4>
+            <h4 id="deve">(26262 ratings)</h4>
+            <h4>85,541 students</h4></span>
+         <h3 id="deve">Created by <u  id= "a-name"> Andre Neigoi</u></h3>
+
+        </div>
+        <div class="course-box">
+            <div id="box-2">
+              
+                    <img id = "image" src="https://img-c.udemycdn.com/course/240x135/1501104_967d_13.jpg"/>
+                    <h1 id="price">₹7861</h1>
+                    <div id="box-2-2" >
+                    <button onclick = addcart() id="box-btn-1">Add to cart</button>
+                    <!-- onclick = "addcart(e)"  -->
+                    <button id="box-btn-2">Buy now</button></div>
+                    <p id="day">30-Day Money-Back Guarantee</p>
+                    <div id="hour"><h3>This course includes:</h3>
+                    <p>21.5 hours on-demand video</p>
+                    <p>12 articles</p>
+                    <p>68 downloadable resources</p>
+                    <p>Full lifetime access</p>
+                    <p>Access on mobile and TV</p>
+                    <p>Certificate of completion</p></div>
+                    <h4 id="gift"><u>Gift this course</u></h4>
+          
+            <hr>
+            <div class="box-2-1">
+                <h3>Training 5 or more people?</h3>
+                    <p>Get your team access to 6,000+ top Udemy courses anytime, anywhere.</p>
+                    <button class="box-2-2">Try Udemy Business</button>
+                    
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="course-content">
+        <div id="box-3">
+            <h2>What you'll learn</h2>
+            
+                <div id="box-3-1">        
+                    <p>Modular learning sections & 10 real world projects with pure JavaScript</p>
+                    <p>Master the DOM (document object model) WITHOUT jQuery</p>
+                    <p>Asynchronous programming with Ajax, Fetch API, Promises & Async / Await</p>
+                    <p>Modern OOP: Classes, constructors, prototypal inheritance, encapsulation, etc.</p>
+                    <p>Asynchronous JavaScript: Event loop, promises, async/await, AJAX calls and APIs</p>
+                    <p>Modern tools for 2021 and beyond: NPM, Parcel, Babel and ES6 modules</p>
+                    <p>Get friendly support in the Q&A area</p>
+                    <p>Build 6 beautiful real-world projects for your portfolio (not boring toy apps)</p>
+                    <p>How to think and work like a developer: problem-solving, researching, workflows</p>
+                    <p>Modern ES6+ from the beginning: arrow functions, destructuring, spread operator, optional chaining (ES2020), etc.</p>
+                    <p>Complex concepts like the 'this' keyword, higher-order functions, closures, etc.</p>
+                    <p>How to architect your code using flowcharts and common patterns</p>
+                    <p>Practice your skills with 50+ challenges and assignments (solutions included)</p>
+                    <p>Design your unique learning path according to your goals: course pathways</p>
+                </div>
+            </div>
+
+    </div>
+    
+</body>
+</html>
+<script>
+  var cart1 = JSON.parse(localStorage.getItem("udemy_cart"))
+
+
+var btn = document.getElementById("box-btn-1")
+function addcart(){
+
+    let course_details = {
+
+        name: document.getElementById("c-name").textContent,
+
+        price: document.getElementById("price").textContent,
+
+        image: document.getElementById("image").src,
+
+        author: document.getElementById("a-name").textContent,
+
+
+
+
+    }
+    cart1.push(course_details)
+   // console.log(cart)
+
+    var cart_data = JSON.stringify(cart1)
+
+    localStorage.setItem("udemy_cart", cart_data)
+
+
+}
+//btn.addEventListener("click", addcart())
+
+
+</script>

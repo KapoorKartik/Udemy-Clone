@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout_page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <style type = "text/css">
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        h1, h2 {
+            font-family:SuisseWorks
+        }
+
+
+    #header {
+            display: flex;
+            background: white;
+        }
+        #udemy_logo  {
+            width: 100px;
+            border: 1px solid white ;
+            height: 50px;
+        }
+        #search_box > input{
+            flex-grow: 2;
+            border: 1px solid white;
+            width: 95%;
+            height: 30px;
+            margin-right:15px;
+            margin-top:5px;
+            /* border-radius: 30px; */
+            outline:none;
+            font-size:14px;
+           
+        }
+        .search-btn {
+            width: 20px;
+            height: 20px;
+        }
+        #search_box {
+            flex-grow: 2;
+            margin-bottom: 1%;
+            display: flex;
+            margin-top: 5px;
+            border: 1px solid black;
+            border-radius: 40px;
+        }
+        .header_text {
+            font-size: .9rem;
+            font-weight: 400;
+            line-height: 1.4;
+            margin-top: 20px;
+        }
+        
+       #sign_up {
+           background: black;
+           border: 1px solid black;
+           width: 90px;
+           margin: 10px 3px;
+           font-weight: bold;
+           font-size: 0.8rem;
+       }
+       #log_in {
+           background: white;
+           border: 1px solid black;
+           width: 90px;
+           margin: 10px auto;
+           font-weight: bold;
+           font-size: 0.8rem;
+       }
+       #cart {
+           background: white;
+           border: 0px solid black;
+       }
+       #cart > img {
+        width: 30px;
+           height: 30px;
+       }
+       #globe {
+        background: white;
+           border: 1px solid black;
+           margin: 10px 3px;
+       }
+       #globe >img {
+
+        width: 20px;
+           height: 20px;
+       }
+       * {
+            margin: 5px;
+        }
+
+
+        .color {
+            color: white;
+        }
+
+        .color_1 {
+            color: black;
+        }
+   
+       
+        #main {
+            width: 300px;
+            margin: auto;
+            /* border: 1px ridge rgb(189, 189, 189); */
+            margin-top:5%;
+        }
+        label, input, button {
+            font-size: 26px;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        #footer {
+    background-color: black;
+    margin:0px;
+    width:100%;
+    height:450px;
+    border:1px solid black;
+    margin-top:5%;
+
+
+}
+#footer {
+   
+   margin-top:300px;
+}
+.flex-bo {
+   display: flex;
+   flex-direction: row;
+   gap:8%;
+   
+}
+.flex-bo h2 {
+   color:white;
+   margin:6% 4%;
+   font-size: 20px;
+  
+   width:100%;
+   margin-right:10%
+}
+.flex-image {
+   display:flex;
+   flex-direction: row;
+   margin: 1% 2%;
+  
+   width:40%;
+}
+.flex-image img {
+   margin:3%;
+
+}
+
+.logo-img > img {
+   width:6%;
+   float:left;
+   margin-left:3%;
+   margin-bottom:3%;
+
+}
+.logo-img > div{
+   float:right;
+   color:white;
+   margin-right:3%;
+}
+.footer-link {
+   display: grid;
+   margin:20px 20px 30px 30px;
+   width:60%;
+   grid-template-columns:28% 28% 28%;
+   grid-template-rows: 10% 10% 10% 10% 10%;
+   gap:5%;
+   color:white;
+   /* border: 3px solid white */
+
+}
+.footer-link >div:nth-child(12) {
+   grid-row-start: 5;
+}
+select{
+    font-size:26px
+}
+#make-pay {
+    text-align: center;
+    min-width:97%;
+    background-color:#a435f0;
+    border:none;
+    height:40px;
+    color: white;
+
+
+ }
+
+/* 
+#main > input , .cv {
+    width:95%;
+    /* outline:none; */
+    .padding {
+    padding: 5rem !important;
+    margin-left: 400px;
+    
+}
+
+.card {
+    margin-bottom: 1.5rem
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #f0f3f5;
+    border-bottom: 1px solid #c8ced3
+}
+
+.card-body {
+    flex: 1 1 1;
+    padding: 1.25rem
+}
+
+
+  
+
+#log_in > a {
+        color:black;
+        text-decoration: none;
+    }
+    #sign_up > a {
+        color:white;
+        text-decoration: none;
+    }
+    html,body {
+        height:100%;
+    }
+
+       
+        </style>
+</head>
+
+<body>
+     
+    <div id="header">
+        <div id="udemy_logo">
+            <a href="/" >
+            <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy" href="home_page.html"  />
+            </a>
+        </div>
+        <div class="header_text" id="Categories_btn">
+            Categories
+        </div>
+        <div id="search_box">
+           <a href="/course1" >
+               <img class="search-btn"  src="https://img.icons8.com/material-sharp/2x/search.png" />
+           </a>
+            <input  type="text" placeholder="Search for anything"  />
+        </div>
+        <div class="header_text">Udemy Business</div>
+        <div class="header_text">Teach on Udemy</div>
+        <a href="/cart"><button id="cart"><img src="https://cdn3.iconfinder.com/data/icons/shopping-cart-19/200/457-128.png" /></button></a>
+        <button id="log_in" ><a href="/login" >Log In</a></button>
+        <button id="sign_up"><a href="/signup">Sign Up </a></button>
+        <button id="globe"><img src="https://cdn3.iconfinder.com/data/icons/media-1-3/32/Internet-Globe-Communication-128.png"/></button>
+    </div>
+
+
+
+    <div class="padding">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-header">
+                        <strong>Debit Card</strong>
+                        <small>enter your card details</small>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="m-2 col-sm-12">
+                                <div class="ml-2 form-group">
+                                    <label for="name">Name</label>
+                                    <input class="form-control" id="name" type="text" placeholder="Enter your name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="ccnumber">Credit Card Number</label>
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" placeholder="0000 0000 0000 0000" autocomplete="email">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-3">
+                                <label for="ccmonth">Month</label>
+                                <select class="form-control" id="ccmonth">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-3">
+                                <label for="ccyear">Year</label>
+                                <select class="form-control" id="ccyear">
+                                    <option>2014</option>
+                                    <option>2015</option>
+                                    <option>2016</option>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                </select>
+                            </div>
+                            
+                           
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label for="cvv">CVV/CVC</label>
+                                    <input class="form-control" id="cvv" type="text" placeholder="123">
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                        <button id = "make-pay" onclick = "makePayment()">Complete Payment</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+       
+        
+        
+  
+    <div id = "main">
+        <!-- <label for="name">Name on the card</label>
+        <input type="text" placeholder="Enter your card name">
+        <label for="debit card">Enter Card Number</label>
+        <input type="text" placeholder = "1234 4567 5674 1234">
+        <label for="">Card Expiry Date</label>
+        <p>
+            <select name="" id="">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select name="" id="">
+                <option value="01">2021</option>
+                <option value="02">2022</option>
+                <option value="03">2023</option>
+                <option value="04">2024</option>
+                <option value="05">2025</option>
+                <option value="06">2026</option>
+                <option value="07">2027</option>
+                <option value="08">2028</option>
+                <option value="09">2029</option>
+                <option value="10">2030</option>
+            </select>
+
+        <p>
+       
+
+        <label for="debit card">Enter CVV</label>
+        <input class = "cv" type="password" placeholder = "XXX"> -->
+       
+    </div>
+
+      
+    <div id="footer">
+        <div class = "flex-bo">
+            <div><h2>Top companies choose Udemy Business to build in-demand career skills.</h2></div>
+            <div class = "flex-image">
+                <img src="https://s.udemycdn.com/partner-logos/v4/apple-dark.svg" alt="">
+                <img src="https://s.udemycdn.com/partner-logos/v4/box-dark.svg" alt="">
+                <img src="https://s.udemycdn.com/partner-logos/v4/volkswagen-dark.svg" alt="">
+                <img src="https://s.udemycdn.com/partner-logos/v4/netflix-dark.svg" alt="">
+                <img src="https://s.udemycdn.com/partner-logos/v4/eventbrite-dark.svg" alt="">
+             </div>
+            </div>
+            <hr>
+             <div class="final-flex">
+                <div class="footer-link">
+                    <div><p>Udemy Business</p></div>
+                    <div><p>Careers</p></div>
+                    <div><p>Terms</p></div>
+                    <div><p>Teach on Udemy</p></div>
+                    <div><p>Blog</p></div>
+                    <div><p>Privacy policy</p></div>
+                    <div><p>Get the App</p></div>
+                    <div><p>Help and support</p></div>
+                    <div><p>Sitemap</p></div>
+                    <div><p>About us</p></div>
+                    <div><p>Affiliate</p></div>
+                    <div><p>Contact us</p></div>
+                </div>
+                <!-- <div class= "glob">
+                    <button id="globe1"><img src="https://cdn0.iconfinder.com/data/icons/mobile-apps-settings-linear-white-with-black-backg/2048/439_-_Browser-256.png"/> 
+                        <span>English</span>
+    
+                     </button>
+                    <div class="clear"></div>
+                </div> -->
+            </div>
+            
+            <div class="logo-img">
+
+                
+                <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="">
+                <div> © 2021 Udemy, Inc</div>
+                </div>
+      
+
+
+
+    </div>
+
+
+
+
+</body>
+</html>
+
+<script>
+
+function makePayment(){
+        setTimeout(function(){
+
+            alert("Congratulations! your course has been approved and is now live in the marketplace ");
+        }, 4000);
+    }
+
+   
+   
+</script>

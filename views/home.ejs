@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online courses-Learn Anything, On Yours Schedule | Udemy </title>
+    <style type = "text/css">
+    body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    h1, h2 {
+        font-family:SuisseWorks
+    }
+     #header {
+            display: flex;
+            background: white;
+        }
+        #udemy_logo  {
+            width: 100px;
+            border: 1px solid white ;
+            height: 50px;
+        }
+        #search_box > input{
+            flex-grow: 2;
+            border: 1px solid white;
+            width: 95%;
+            height: 30px;
+            margin-right:15px;
+            /* border-radius: 30px; */
+            outline:none;
+        }
+        .search-btn {
+            width: 20px;
+            height: 20px;
+        }
+        #search_box {
+            flex-grow: 2;
+            margin-bottom: 1%;
+            display: flex;
+            margin-top: 5px;
+            border: 1px solid black;
+            border-radius: 40px;
+        }
+        .header_text {
+            font-size: .9rem;
+            font-weight: 400;
+            line-height: 1.4;
+            margin-top: 20px;
+        }
+        
+       #sign_up {
+           background: black;
+           border: 1px solid black;
+           width: 90px;
+           margin: 10px 3px;
+           font-weight: bold;
+           font-size: 0.8rem;
+       }
+       #log_in {
+           background: white;
+           border: 1px solid black;
+           width: 90px;
+           margin: 10px auto;
+           font-weight: bold;
+           font-size: 0.8rem;
+       }
+       #cart {
+           background: white;
+           border: 0px solid black;
+       }
+       #cart > img {
+        width: 30px;
+           height: 30px;
+       }
+       #globe {
+        background: white;
+           border: 1px solid black;
+           margin: 10px 3px;
+       }
+       #globe >img {
+
+        width: 20px;
+           height: 20px;
+       }
+       * {
+            margin: 5px;
+        }
+
+
+        .color {
+            color: white;
+        }
+
+        .color_1 {
+            color: black;
+        }
+   
+
+#home-top {
+    margin:5px 0px;
+    display:grid;
+    height:380px;
+    background-image: url(https://img-c.udemycdn.com/notices/web_banner/image_udlite/92a752b4-2f5b-45c7-a451-d84b32ccb0cf.jpg);
+   
+    grid-template-columns: 25%;
+    background-repeat: no-repeat;
+   
+
+}
+
+.leftbox {
+  
+   margin-left:20%;
+   background-color: white;
+   width:400px;
+   margin-top:50px;
+   margin-bottom: 60px;
+   padding:15px;
+   
+}
+.b-font {
+    font-size: 26px;
+
+}
+#b-font {
+    font-size: 44px;
+}
+.leftbox > p {
+    font-size: 20px;
+}
+.leftbox > input {
+    font-size: 24px;
+   
+}
+.leftbox > input::placeholder {
+    font-size: 12px;
+    padding:10px;
+}
+.course-section > p {
+    
+    font-size: 22px;
+}
+
+.course-flex {
+    display:flex;
+    flex-direction: row;
+    gap:15px;
+    margin-top:25px;
+  
+
+}
+.course-flex > a {
+    font-size: 18px;
+    text-decoration: none;
+    color:rgb(44, 44, 44);
+    font-weight: 600;
+    
+}
+a#a1:hover {
+    color:rgb(0, 0, 0);
+    
+}
+a#a2:hover {
+    color:rgb(0, 0, 0);
+    
+}
+a#a3:hover {
+    color:rgb(0, 0, 0);
+   
+}
+a#a4:hover {
+    color:rgb(0, 0, 0);
+   
+}
+a#a5:hover {
+    color:rgb(0, 0, 0);
+  
+}
+a#a6:hover {
+    color:rgb(0, 0, 0);
+    
+}
+a#a7:hover {
+    color:rgb(0, 0, 0);
+  
+}
+.thpara {
+    background-color:#f5fffc;
+    display:flex;
+    flex-direction:row;
+    font-size: 18px;
+    color:rgb(44, 44, 44);
+    font-weight: 600;
+    width:100%;
+    margin-top:5%;
+  
+    
+
+}
+.thpara > div {
+    display: flex;
+    flex-direction: row;
+    width:28%;
+    height:2%;
+
+
+   
+   
+}
+.thpara > div:nth-child(2){
+    margin-left:8%;
+    margin-right:8%;
+}
+.thpara > div > img {
+    width:10%;
+    height:10%;
+    
+
+}
+ .marg {
+     margin-top: 5%;
+ }
+.instructor-box , .business-box , .transform{
+    display:flex;
+    flex-direction:row;
+    width:70%;
+    margin:auto;
+    margin-top:5%;
+  
+
+   
+}
+.instructor-box > .content , .transform > .content {
+    width:45%;
+   
+    margin:10%;
+    
+}
+.business-box > .content {
+   
+    margin:10% 6%;
+    width:45%;
+}
+.business-box > .content > img {
+    width:70%;
+}
+.business-box > .img-box {
+    
+    width:45%;
+   
+
+}
+
+.content > p{
+    font-size: 22px;
+}
+.trusted {
+    background-color:f5fffc;
+    text-align: center;
+    margin-top:5%;
+
+}
+.flex-image {
+    display:flex;
+    flex-direction: row;
+    margin: 1% 30%;
+}
+.flex-image img {
+    margin:3%;
+
+}
+#footer {
+    background-color: black;
+    margin:0px;
+    width:100%;
+    height:300px;
+    border:1px solid black;
+    margin-top:5%;
+
+
+
+}
+.logo-img > img {
+    width:6%;
+    float:left;
+    margin-left:3%;
+    margin-bottom:3%;
+
+}
+.logo-img > div{
+    float:right;
+    color:white;
+    margin-right:3%;
+}
+.footer-link {
+    display: grid;
+    margin:20px 20px 30px 30px;
+    width:60%;
+    grid-template-columns:28% 28% 28%;
+    grid-template-rows: 10% 10% 10% 10% 10%;
+    gap:5%;
+    color:white;
+    /* border: 3px solid white */
+
+}
+.footer-link >div:nth-child(12) {
+    grid-row-start: 5;
+}
+.glob {
+    float:right;
+    background-color: black;
+    /* border: 3px solid white */
+}
+.final-flex {
+    /* border:3px solid white; */
+    display: flex;
+    flex-direction: row;
+    
+}
+.final-flex > .glob  {
+    height:15%;
+    width:10%;
+    margin-left:300px;
+    float:right;
+    background-color: black;
+    
+}
+
+#globe1 {
+        background:black;
+        color:white;
+           /* border: 3px solid red; */
+           margin: 5px 3px;
+       }
+       #globe1 >img {
+           padding:5px;
+           
+
+        width: 20px;
+           height: 20px;
+       } 
+       #globe1 > span {
+           padding:0px;
+           margin:0px;
+           margin-bottom:10px;
+           font-size:16px;
+           border:1px solid white
+        
+       }
+       .img-small {
+           width:5%;
+       }
+/* 
+#globe {
+        background:white;
+           border: 1px solid white;
+           margin: 10px 3px;
+       }
+       #globe >img {
+
+        width: 20px;
+           height: 20px;
+       } */
+/* 
+.clear {
+    clear:both;
+    
+} */
+
+     .course1 a{
+        text-decoration:none;
+    }
+    
+    .course1 h3{
+        color:black
+    }
+    .course-video-box {
+        width:98%;
+        height:600px;
+        border:1px solid grey;
+        margin-top:5%;
+        
+
+    }
+    .course-video-box > h1 {
+        padding:25px 25px;
+    }
+    .para {
+        width:60%;
+        line-height:22px;
+        margin:10px 25px;
+        font-size:18px;
+
+    }
+    .video-box {
+        display:grid;
+        grid-template-columns: 18% 18% 18% 18% 18%;
+        gap:2%;
+        /* border:1px solid green; */
+        margin-top:4%;
+        
+    }
+     #instructor {
+         font-size: 14px;
+         color:grey;
+        
+    }
+    .star {
+        font-size: 16px;
+        color:#E65100;
+        font-weight: 600;
+    }
+    .enrol-no {
+        font-size:14px;
+        color:grey;
+    }
+    .price-course {
+        font-weight: 600;
+        font-size: 20px;
+        color:black;
+    }
+    #search2 {
+        border: 1px solid black;
+        display:flex;
+
+    }
+    #search-box {
+        flex-grow:2;
+        outline:none;
+        border:none;
+    }
+   
+    section {
+        min-height:100vh;
+    }
+    #log_in > a {
+        color:black;
+        text-decoration: none;
+    }
+    #sign_up > a {
+        color:white;
+        text-decoration: none;
+    }
+    html,body {
+        height:100%;
+        
+    }
+    .nameshowing {
+        margin-left:1%;
+        margin-top:2%;
+        
+    }
+    
+
+    
+    </style>
+</head>
+<body>
+  
+
+   
+    <div id="header">
+        <div id="udemy_logo">
+            <a href="/" >
+            <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy" href="home_page.html"  />
+            </a>
+        </div>
+        <div class="header_text" id="Categories_btn">
+            Categories
+        </div>
+        <div id="search_box">
+           <a href="/course1" >
+               <img class="search-btn"  src="https://img.icons8.com/material-sharp/2x/search.png" />
+           </a>
+            <input  type="text" placeholder="Search for anything"  />
+        </div>
+        <div class="header_text">Udemy Business</div>
+        <div class="header_text">Teach on Udemy</div>
+        <a href="/cart"><button id="cart"><img src="https://cdn3.iconfinder.com/data/icons/shopping-cart-19/200/457-128.png" /></button></a>
+        <button id="log_in" ><a href="/login" >Log In</a></button>
+        <button id="sign_up"><a href="/signup">Sign Up </a></button>
+        <button id="globe"><img src="https://cdn3.iconfinder.com/data/icons/media-1-3/32/Internet-Globe-Communication-128.png"/></button>
+    </div>
+
+    <section>
+        <div id = "home-top">
+            <img src="" alt="">
+           
+            <div class="leftbox">
+                    <h1 id = "b-font">Learning that gets you</h1>
+                   <p>Skills for your present (and your future). Get started with us.</p> 
+                  <div id="search2">
+                    <input id = "search-box" type="text" placeholder="What do you want to learn ?">
+                    <a href="/course1" >
+                     <img class="search-btn"  src="https://img.icons8.com/material-sharp/2x/search.png" />
+                 </a>
+                  </div>
+                </div>
+        </div>
+
+        <div class="course-section">
+            <h1 id = "b-font" class = "marg">A broad selection of courses</h1>
+            <p>Choose from 155,000 online video courses with new additions published every month</p>
+            <div class="course-flex">
+                <a id = "a1"  href="">Python</a>
+                <a  id = "a2" href="">Excel</a>
+                <a  id = "a3"href="">Web Development</a>
+                <a  id = "a4" href="">Javascript</a>
+                <a  id = "a5" href="">Data Science</a>
+                <a  id = "a6" href="">AWS certification</a>
+                <a  id = "a7" href="">Drawing</a>
+            </div>
+        </div>
+        <h2 class = "nameshowing" id = "user_name"> </h2>
+        <div class="course-video-box">
+            <h1>Grow your software development skills with JavaScript</h1>
+            <div class="para">
+                <p>JavaScript is one of the most ubiquitous programming languages on the planet, mostly because it's the backbone of interactive web applications. On top of that, JavaScript is a great language for beginners because it gives them a chance to write code that does something visual, which is exciting and helpful when you're just getting started as a programmer. Dynamic content is the hot topic in web development right now. Dynamic content refers to content that constantly changes and adapts to specific users whenever possible.</p>
+
+            </div>
+            <div class="video-box">
+                <div class="course1">
+                    <a href="/course1">
+                <img src="https://img-c.udemycdn.com/course/240x135/851712_fc61_6.jpg" alt="">
+                <h3 class= "course-title">The Complete JavaScript Course 2021</h3>
+                <p id = "instructor">James anderson</p>
+                <p class="star">4.6 Star<span class = "enrol-no">(378889)</span></p>
+                <p class = "price-course">₹8640</p>
+                    </a>
+                </div>
+
+
+                 <div class="course1">
+                    <a href="/course2">
+                <img src="https://img-c.udemycdn.com/course/240x135/364426_2991_6.jpg" alt="">
+                <h3 class= "course-title">JavaScript:Understanding the Weird Parts</h3>
+                <p id = "instructor">Anthony Alicea</p>
+                <p class="star">4.7 Star<span class = "enrol-no">(164281)</span></p>
+                <p class = "price-course">₹7140</p>
+                </a>
+                </div>
+
+
+                 <div class="course1">
+                    <a href="/course3">
+                <img src="https://img-c.udemycdn.com/course/240x135/1463348_52a4_2.jpg" alt="">
+                <h3 class= "course-title">Modern JavaScript From The Beginning</h3>
+                <p id = "instructor">Brad Traversy</p>
+                <p class="star">4.7 Star<span class = "enrol-no">(858889)</span></p>
+                <p class = "price-course">₹8640</p>
+                </a>
+                </div>
+
+
+                 <div class="course1">
+                    <a href="/course4">
+                <img src="https://img-c.udemycdn.com/course/240x135/2508942_11d3_3.jpg" alt="">
+                <h3 class= "course-title">JavaScript - The Complete Guide 2021</h3>
+                <p id = "instructor">Maxmillian schwarzmuller,..</p>
+                <p class="star">4.5 Star<span class = "enrol-no">(16266)</span></p>
+                <p class = "price-course">₹9401</p>
+                  </a>
+                </div>
+
+
+                 <div class="course1">
+                    <a href="/course5">
+                <img src="https://img-c.udemycdn.com/course/240x135/1501104_967d_13.jpg" alt="">
+                <h3 class= "course-title">The Complete JavaScript Course 2021</h3>
+                <p id = "instructor">Andre Neigoi</p>
+                <p class="star">4.8 Star<span class = "enrol-no">(8889)</span></p>
+                <p class = "price-course">₹7861</p>
+                 </a>
+                </div>
+              
+
+              </div>
+            
+
+
+        </div>
+
+
+        <div class="thpara">
+            <div>
+                <img src="https://cdn3.iconfinder.com/data/icons/movie-video/512/Icon_6-128.png" alt="">
+                <span>Learn in-demand skills with over 155000 video courses</span>
+            </div>
+            <div>
+                <img src="https://cdn0.iconfinder.com/data/icons/multimedia-solid-30px/30/star_rate_favorite_bookmark-128.png" alt="">
+                <span>Choose courses taught by real-world experts</span>
+            </div>
+            <div>
+                <img src="https://cdn2.iconfinder.com/data/icons/picons-basic-3/57/basic3-154_infinity-128.png" alt="">
+                <span>Learn at your own pace, with lifetime access on mobile and desktop</span>
+            </div>
+
+        </div>
+
+        <div class="instructor-box">
+            <div class="img-box">
+                <img src="https://s.udemycdn.com/home/non-student-cta/instructor-1x-v3.jpg" alt="">
+            </div>
+            <div class = "content">
+                <h1>Become an Instructor</h1>
+                <p>Instructors from all around the world millions of students on Udemy.We provide the tools and skills to teach what you love.</p>
+
+            </div>
+        </div>
+
+        <div class="trusted">
+            <h1>Trusted by companies of all sizes</h1>
+            <div class = "flex-image">
+               
+                    <img src="https://s.udemycdn.com/partner-logos/v4/apple-dark.svg" alt="">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/box-dark.svg" alt="">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/volkswagen-dark.svg" alt="">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/netflix-dark.svg" alt="">
+                    <img src="https://s.udemycdn.com/partner-logos/v4/eventbrite-dark.svg" alt="">
+
+              
+               
+            </div>
+        </div>
+
+        <div class="business-box">
+           
+            <div class = "content">
+                <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-ub.svg" alt="">
+                <p>Get unlimited access to 6,000+ of Udemy’s top courses for your team. Learn and improve skills across business, tech, design, and more.
+
+                </p>
+
+            </div>
+            <div class="img-box">
+                <img src="https://s.udemycdn.com/home/non-student-cta/ub-1x-v3.jpg" alt="">
+            </div>
+           
+          
+            
+        </div>
+
+        <div class="transform">
+            <div class="img-box">
+                <img src="https://s.udemycdn.com/home/non-student-cta/transform-1x-v3.jpg" alt="">
+            </div>
+            <div class = "content">
+                <h1>Transform your life through education</h1>
+                <p>Learners around the world are launching new careers, advancing in their fields, and enriching their lives.</p>
+
+            </div>
+
+        </div>
+    </secion>
+
+        <div id="footer">
+            <div class="final-flex">
+            <div class="footer-link">
+                <div><p>Udemy Business</p></div>
+                <div><p>Careers</p></div>
+                <div><p>Terms</p></div>
+                <div><p>Teach on Udemy</p></div>
+                <div><p>Blog</p></div>
+                <div><p>Privacy policy</p></div>
+                <div><p>Get the App</p></div>
+                <div><p>Help and support</p></div>
+                <div><p>Sitemap</p></div>
+                <div><p>About us</p></div>
+                <div><p>Affiliate</p></div>
+                <div><p>Contact us</p></div>
+            </div>
+            <!-- <div class= "glob">
+                <button id="globe1"><img src="https://cdn0.iconfinder.com/data/icons/mobile-apps-settings-linear-white-with-black-backg/2048/439_-_Browser-256.png"/> 
+                    <span>English</span>
+
+                 </button>
+                <div class="clear"></div>
+            </div> -->
+        </div>
+        <div class="logo-img">
+
+                
+            <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="">
+            <div> © 2021 Udemy, Inc</div>
+            </div>
+
+
+        </div>
+
+
+
+</body>
+</html>
+<script>
+
+      let name = document.getElementById("user_name")
+      let user_detail = JSON.parse(localStorage.getItem("user_details"))
+    
+
+    function showusername(){
+        if(!user_detail) {
+
+            name.textContent = "Hey signup to buy new courses"
+
+        }
+        else {
+            name.textContent = `Hey ${user_detail.name} check out the below courses `
+        }
+       
+
+    }
+   
+   showusername()
+
+   
+
+
+    
+
+    
+    // a1.addEventListener("mouseover", changeBackground)
+    // a1.addEventListener("mouseout", changeBackground1)
+    // a2.addEventListener("mouseover", changeBackground)
+    // a3.addEventListener("mouseover", changeBackground)
+    // a4.addEventListener("mouseover", changeBackground)
+    // a5.addEventListener("mouseover", changeBackground)
+    // a6.addEventListener("mouseover", changeBackground)
+    // a7.addEventListener("mouseover", changeBackground)
+   
+
+
+
+
+ 
+
+</script>
