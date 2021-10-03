@@ -12,6 +12,7 @@
 * HTML
 * CSS
 * Javascript
+* Bootstrap
 * Visual Studio Code
 * Git
 
@@ -19,6 +20,7 @@
 * Homepage
 * Signup & login page
 * Cart page
+* Checkout page
 * course page (1 to 5)
 
 ### Libraries Used:
